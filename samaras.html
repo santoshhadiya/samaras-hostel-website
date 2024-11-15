@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SAMARAS HOSTEL-Gov. Of Gujarat</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:#F3F3F3;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+        }
+       
+
+        .colortheme{
+            width: 100%;
+            height: 30px;
+            background-color: #58616B;
+            display: flex;
+            align-items:center;
+            justify-content: end;
+            
+        }
+        .textsize{
+            border-right: 2px solid white;
+            padding-right: 5px;
+        }
+        .textsize h5{
+            display: inline;
+            color: white;
+            font-size: 13px;
+            margin: 0px 5px;
+            cursor: pointer;
+        }
+        .themecolor{
+            display: flex;
+            margin: 0px 10px;
+        }
+        .themecolor div{
+            height: 13px;
+            width: 13px;
+            border: 1px solid white;
+            margin: 0px 5px;
+            cursor: pointer;
+        }
+        .blue-color{
+            background-color: #00446D; 
+        }
+        .orange-color{
+            background-color: #DD8D57;
+        }
+        .green-color{
+            background-color: #117F66;
+        }
+        .navbar{
+            background-color: #ffffff;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+        .logo{
+            height: 100%;
+            width: 30%;
+            background-image: url("gscs-logo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+      }
+        .manu{
+           height: 100%;
+           display: flex;
+           align-items: center;
+        }
+        .manu a{
+           padding: 0px 10px;
+           margin-left: 5px;
+           font-weight: 500;
+           font-size: 14px;
+           color: rgb(32, 32, 32);
+           text-decoration: none;
+           height: 100%;
+           display: flex;
+           align-items: center;
+       }
+        .manu a:hover{
+            background-color: #DD8D57;
+            color: #F3F3F3;
+            transition: 0.5s;
+        }
+        .manu a i{
+            font-size: 10px;
+            margin-right: 5px;
+            height: 100%;
+            display: flex;
+            align-items: center; 
+            margin-top: 3px;  
+        }
+        .down{
+            margin-left: 5px;
+           
+        }
+        #login{
+            background-color: #117F66;
+            color: rgb(255, 255, 255);
+        }
+        .manu-img{
+            height: 400px;
+            width: 100%;
+            overflow-y: hidden;
+            position: relative;
+        }
+        .manu-img img{
+            height: 200%;
+            width: 100%;
+            position: relative;
+            top: -200px;
+        }
+        .manu-img div{
+            
+            color: white;
+            font-weight: 500;
+            height: 50px;
+            width: 340px;
+           position: absolute;
+          bottom: 0px;
+          right: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-left: 40px solid transparent;
+          border-bottom: 45px solid #117F66;
+
+        }
+        .manu-img div p{
+            position: absolute;
+            bottom: -30px;
+            left: 50px;
+        }
+        .middal{
+            height: 153vh;
+            width: 100%;
+            background-color: transparent;
+            padding: 25px 15px;
+            position: relative;
+        }
+        .middal .new-notification{
+            height: 30px;
+            width: 100%;
+            background-color: transparent;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+        .notification{
+            height: 100%;
+            width: 90px;
+            background-color: #58616B;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .notification-style{
+            height: 20px;
+            width: 10px;
+            border-top: 10px solid transparent;
+            border-left: 15px solid #58616B;
+            border-bottom: 10px solid transparent;
+           
+        }
+        .new{
+           
+            width: 100%;
+        }
+        .information{
+            height: 100%;
+            width: 100%;
+            margin-top: 30px;
+           display: flex;
+        }
+        .addmission{
+            height: 100%;
+            width: 15%;
+      }
+        .online-addmission{
+            width: 100%;
+            height: 90px;
+            background-color: #DD8D57;
+            display: flex;
+        }
+        .hostel-img-icon{
+            width: 50%;
+            height: 100%;
+            background-color:#B87648;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hostel-img-icon i{
+            color: white;
+            font-size: 45px;
+        }
+        .online-addmission p{
+            margin:  10px 15px;
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .managemant{
+            background-color: #117F66;
+            margin-top: 20px;
+        }
+        .managemant .hostel-img-icon{
+            background-color: #0e6a55;
+        }
+        .notification-list{
+            margin-top: 20px;
+            height: 500px;
+            width: 100%;
+      }
+        .heading-list{
+            height: 35px;
+            width: 100%;
+            background-color: #42546D;
+            display: flex;
+            align-items: center;
+        }
+        .heading-list p{
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+        .heading-list1{
+            height: 100%;
+            width: 5px;
+            background-color: #DD8D57;
+        }
+        .notifications{
+            height: 100%;
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 0px 10px;
+            padding-top: 20px;
+            overflow-y: hidden;
+            position: relative;
+        }
+        .notifications ul li{
+            list-style: none;
+            font-size: 14px;
+            color: #00446D;
+            line-height: 25px;
+            margin: 10px 0px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            
+        }
+        .notifications ul li:hover{
+            text-decoration: underline;
+            color: blue;
+
+        }
+        .ul{
+            position: relative;
+            animation: slide 10s linear infinite;
+        }
+        @keyframes slide {
+            0%{
+                top:0px;
+            }
+            25%{
+                top:-50px;
+            }
+          
+            50%{
+                top:-100px;
+            }
+           
+            75%{
+                top:-150px
+            }
+           
+            100%{
+                top:-200px;
+            } 
+        }
+  .short{
+    height: 50px;
+    
+  }
+  .short p{
+    text-align: right;
+    color: #00446D;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .short p:hover{
+    text-decoration: underline;
+    color: blue;
+    transition: 0.5s;
+  }
+   .readmore{
+    margin-top: 60px;
+   }  
+   .welcome{
+    height: 100%;
+    width: 70%;
+    padding: 0px 20px;
+   }  
+   .heading-welcome{
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #117f66;
+   }
+   .heading-welcome h5{
+    color: #4b525b;
+    font-size: 26px;
+   }
+   .heading-welcome p{
+    color:#117F66;
+    font-size: 26px;
+    margin-left: 10px;
+   }
+   .About-Society{
+    height: 200px;
+   
+   }
+   .About-Society h5{
+    margin: 20px 0px;
+   }
+   .About-Society h4{
+    margin-top: 20px;
+   }
+   .minister{
+    width: 15%;
+    height: 100%;
+    background-color: white;
+   }
+   .minister1{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    padding: 15px;
+    border-bottom: 0.5px solid rgb(91, 91, 91);
+   }
+   .minister-img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  
+   }
+   .minister-img img{
+    border-radius: 60%;
+    border: 1px solid rgb(144, 144, 144);
+    height: 80px;
+    width: 60px;
+
+   }
+   .intro-minister{
+    margin-left: 10px;
+   }
+   .intro-minister p{
+    font-size: 14px;
+   }
+    </style>
+</head>
+<body>
+   <div class="main">
+      <div class="top">
+        <div class="colortheme">
+            <div class="textsize">
+                <h5>A+</h5>
+                <h5>A</h5>
+                <h5>A-</h5>
+            </div>
+            <div class="themecolor">
+                <div class="blue-color"></div>
+                <div class="orange-color"></div>
+                <div class="green-color"></div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="manu">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="#"><i class="fas fa-building"></i> Hostels <i class="fa-solid fa-angle-down down" ></i></a>
+                <a href="#"><i class="fas fa-images"></i> Gallery <i class="fa-solid fa-angle-down down"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a>
+                <a href="#" id="login"><i class="fas fa-sign-in-alt"></i> Login</a> 
+            </div>
+            
+        </div>
+        <div class="manu-img">
+            <img src="https://samras.gujarat.gov.in/uploads/Original/101062021012011231.JPG">
+            <div><p>Samaras Chhatralay</p></div>
+        </div>
+      </div>
+      <div class="middal">
+         <div class="new-notification">
+            <div class="notification">Notification</div>
+            <div class="notification-style"></div>
+            <div class="new">
+                <marquee behavior="scroll" direction="left" onmouseover="stop()" onmouseout="start()">
+                    <img src="https://samras.gujarat.gov.in/assets/images/new-flashing.gif">
+                    સમરસ છાત્રાલયોમાં ફક્ત ગ્રુપ-૧ મેડીકલમાં પ્રવેશ મેળવવા અંગેની જાહેરાત (શૈક્ષણિક વર્ષ ૨૦૨૪-૨૫ માટે)
+                </marquee>
+            </div>
+         </div>
+        
+             <div class="information">
+
+                  <div class="addmission">
+                <div class="online-addmission">
+                    <div class="hostel-img-icon">
+                        <i class="fa-regular fa-building"></i>
+                    </div>
+                    <p>Chhatralay Online Addmission</p>
+                </div>
+                <div class="online-addmission managemant">
+                    <div class="hostel-img-icon">
+                        <i class="fa-regular fa-building"></i>
+                    </div>
+                    <p>Grievence Management System</p>
+                </div>
+                <div class="notification-list">
+                    <div class="heading-list">
+                        <div class="heading-list1"></div>
+                        <p><i class="fa-solid fa-rectangle-list"></i> Notification List</p>
+                    </div>
+                    <div class="notifications">
+                          <ul class="ul">
+                            <li><i class="fa-solid fa-angles-right"></i> સમરસ છાત્રાલયોમાં ફક્ત ગ્રુપ-૧ મેડીકલમાં પ્રવેશ મેળવવા અંગેની જાહેરાત (શૈક્ષણિક વર્ષ ૨૦૨૪-૨૫ માટે)</li>
+                            <hr>
+                            <li><i class="fa-solid fa-angles-right"></i>  સમરસ છાત્રાલયોમાં પ્રવેશ મેળવવાપાત્ર વિદ્યાર્થીઓની પ્રોવિઝનલ મેરીટ યાદી ( ROUND 5)</li>
+                            <hr>
+                            <li><i class="fa-solid fa-angles-right"></i>  સમરસ છાત્રાલયોમાં પ્રવેશ મેળવવાપાત્ર વિદ્યાર્થીઓની પ્રોવિઝનલ મેરીટ યાદી ( ROUND 4 Including Medical Students)</li>
+                            <hr>
+                            <li><i class="fa-solid fa-angles-right"></i> સમરસ છાત્રાલયોમાં પ્રવેશ મેળવવાપાત્ર વિદ્યાર્થીઓની પ્રોવિઝનલ મેરીટ યાદી ( ROUND 3)</li>
+                            <hr>
+                            <li><i class="fa-solid fa-angles-right"></i> સમરસ છાત્રાલયોમાં ફક્ત ગ્રુપ-૧ મેડીકલમાં પ્રવેશ મેળવવા અંગેની જાહેરાત (શૈક્ષણિક વર્ષ ૨૦૨૪-૨૫ માટે)</li>
+                            <hr>
+                            <li><i class="fa-solid fa-angles-right"></i> સમરસ છાત્રાલયોમાં પ્રવેશ મેળવવાપાત્ર વિદ્યાર્થીઓની પ્રોવિઝનલ મેરીટ યાદી ( ROUND 4 Including Medical Students)</li>
+                            <hr>
+                            <li><i class="fa-solid fa-angles-right"></i>સમરસ છાત્રાલયોમાં પ્રવેશ મેળવવાપાત્ર વિદ્યાર્થીઓની પ્રોવિઝનલ મેરીટ યાદી ( ROUND 5)</li>
+                            <hr>
+                          </ul>
+                    </div>
+                </div>
+                <div class="notification-list readmore">
+                    <div class="heading-list">
+                        <div class="heading-list1"></div>
+                        <p><i class="fa-solid fa-rectangle-list"></i> News And Events</p>
+                    </div>
+                    <div class="notifications short">
+                        <p>Read More</p>
+                    </div>
+                </div>
+                
+                  </div>
+                  <div class="welcome">
+                      <div class="heading-welcome">
+                        <h5>Welcome to</h5>
+                        <p>SAMARAS CHHATRALAY</p>
+                      </div>
+                      <div class="About-Society">
+                        <h4>About Society: </h4>
+                        <h5>
+                            The Government of Gujarat has established “Gujarat Samras Chhatralay Society” in September 2016 under Social Justice and Empowerment Department. 
+                        </h5>
+                        <h5>   
+                            The society shall function as an institutional arrangement at district level for providing facilities to students of all caste - SC/ST/OBC/EBC.
+                        </h5>
+                      </div>
+                      <div class="heading-welcome">
+                        <h5>Hostel</h5>
+                        <p>Gallery</p>
+                      </div>
+                  </div>
+                  <div class="minister">
+                    <div class="minister1">
+                        <div class="minister-img">
+                            <img src="cmbhupendrapatel09172021113057352.jpg">
+                        </div>
+                        <div class="intro-minister">
+                            <h5>Shri Bhupendra Patel</h5>
+                            <p>Hon'ble Chief Minister
+                            Govt. Of Gujarat</p>
+                        </div>    
+                    </div>
+                    <div class="minister1">
+                        <div class="minister-img">
+                            <img src="https://samras.gujarat.gov.in/uploads/Original/01-ministerphoto01042024115846661.png">
+                        </div>
+                        <div class="intro-minister">
+                            <h5>Smt. Bhanuben Babariya</h5>
+                            <p>Hon'ble Minister
+                                Govt. Of Gujarat</p>
+                        </div>    
+                    </div>
+                    <div class="minister1">
+                        <div class="minister-img">
+                            <img src="https://samras.gujarat.gov.in/uploads/Original/shribhikhusinhparmar01132023010631280.jpg">
+                        </div>
+                        <div class="intro-minister">
+                            <h5>Shri Bhikhusinh Parmar</h5>
+                            <p>Hon'ble Minister of State
+                                Govt. Of Gujarat</p>
+                        </div>    
+                    </div>
+                    <div class="minister1">
+                        <div class="minister-img">
+                            <img src="https://samras.gujarat.gov.in/uploads/Original/stomarphoto06162021122608562.jpg">
+                        </div>
+                        <div class="intro-minister">
+                            <h5>Smt. Sunaina Tomar, IAS</h5>
+                            <p>Additional Chief Secretary
+                                SJED Department</p>
+                        </div>    
+                    </div>
+                  </div>
+             </div>
+           
+      </div>
+   </div>
+</body>
+</html>
